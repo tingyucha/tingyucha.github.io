@@ -1,18 +1,15 @@
 ---
-title: 'Demo Project'
-subtitle: 'This is a demo'
+title: 'About Me'
+subtitle: 'Research Interests'
 date: 2018-06-30 00:00:00
-description: This page is a demo that shows everything you can do inside portfolio and blog posts.
-featured_image: '/images/demo/demo-square.jpg'
+description: I am a Ph.D. candidate at Colorado State University working with Dr. Michael M. Bell. My research interests include tropical cyclone, heavy precipitation, and radar meteorology. I am also interested in data assimilation, artificial intelligence and statistical method.
+featured_image: '/images/picture/profile2.png'
 ---
-
-![](/images/demo/demo-landscape.jpg)
 
 ## Demo content
 
-This page is a demo that shows everything you can do inside portfolio and blog posts.
+I'm a Ph.D. candidate at Colorado State University working with Dr. Michael M. Bell. My research interests include tropical cyclone, heavy precipitation, and radar meteorology. I'm also interested in data assimilation, artificial intelligence and statistical method.  
 
-We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
 
 **Obviously,** we’ve styled up *all the basic* text formatting options [available in markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 

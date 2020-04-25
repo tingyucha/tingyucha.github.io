@@ -2,28 +2,74 @@
 layout: default
 title: A sleek, modern Jekyll theme for personal websites.
 description: A sleek, modern Jekyll theme for personal websites. Personal is the perfect theme for developers, designers and other creatives.
-featured_image: /images/demo/home.jpg
+featured_image: /images/hurricanemichael.jpeg
 ---
+<style>
+div.wrap_header{
+	        position: relative;
+	        margin: auto;
+	        padding: auto;
+					height: 0;
+	        max-width: 1000px;
+
+	        @include mq(tabletp) {
+	                padding: 0;
+	                max-width: 680px;
+	        }
+
+	        @include mq(tabletl) {
+	                max-width: 900px;
+	        }
+
+	        @include mq(laptop) {
+	                max-width: 1100px;
+	        }
+}
+
+
+</style>
 
 <section class="hero">
-
+{% include socials.html %}
 	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
-		<div class="hero__overlay"></div>
+		<div class="hero__overlay"> </div>
 	</div>
 
-	<div class="wrap">
+	<div class="wrap_header">
 
-		<h1>A sleek, modern Jekyll theme
-		for personal websites</h1>
-		<p>Personal is the perfect theme for developers, designers and other creatives.</p>
-
-		{% include socials.html %}
+		<!--h1 style="text-align:right">Hurricane Michael (2018)</h1-->
+		<!--p style="text-align:right">Hurricane Michael (2018) </p-->
 
 	</div>
 
 </section>
 
 <section class="listing">
+
+	<div class="wrap">
+
+		<article class="post">
+
+			<div class="post__image-wrap">
+				<div class="post__image" href="tingyu_cv.html" style="background-image: url({{ '/images/picture/profile2.png' | relative_url }})"></div>
+			</div>
+
+			<div class="post__content-wrap">
+				<div class="post__content">
+					<h2 class="post__title"><a href="tingyu_cv.html">{{ 'About Me' }}</a></h2>
+					<!--h2 class="post__title"><a href="{{ project.url | relative_url }}">{{ 'About Me' }}</a></h2-->
+					<p class="post__subtitle">{{ 'Research Interests' }}</p>
+					<p class="post__description" style="text-align:justify">{{ 'I am a Ph.D. candidate at Colorado State University working with Dr. Michael M. Bell. My research interests include tropical cyclone, heavy precipitation, and radar meteorology. I am also interested in data assimilation, artificial intelligence and statistical method. You can find more info about me here.' }}</p>
+				</div>
+			</div>
+		</article>
+
+
+	</div>
+
+</section>
+
+<!--section class="listing">
 
 	<div class="wrap">
 
@@ -39,7 +85,7 @@ featured_image: /images/demo/home.jpg
 				<div class="post__content">
 					<h2 class="post__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
 					<p class="post__subtitle">{{ project.subtitle }}</p>
-					<p class="post__description">{{ project.description }}</p>
+					<p class="post__description" style="text-align:justify">{{ project.description }}</p>
 				</div>
 			</div>
 
@@ -49,4 +95,4 @@ featured_image: /images/demo/home.jpg
 
 	</div>
 
-</section>
+</section-->
