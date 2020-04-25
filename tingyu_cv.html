@@ -1,0 +1,35 @@
+---
+layout: default
+title: CV
+featured_image: /images/picture/aspen_yellow.png
+---
+
+<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1> About Me! </h1>
+		<p> Ting-Yu's experience and CV </p>
+
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+
+
+				{% markdown cv.md %}
+				{% markdown demo-post.md %}
+		</article>
+
+	</div>
+
+</section>
