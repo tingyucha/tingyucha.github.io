@@ -1,7 +1,7 @@
 site: Ting-Yu Cha
 
-url: http://tingyucha.com 
-baseurl: 
+url:  
+baseurl: tingyucha.github.io
 
 collections:
   pages:
