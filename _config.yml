@@ -1,7 +1,7 @@
 site: Ting-Yu Cha
 
-url:  
-baseurl: tingyucha.github.io
+url: https://tingyu-cha.com 
+baseurl: 
 
 collections:
   pages:
@@ -51,7 +51,6 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - markdown
 
 paginate: 6
 paginate_path: "/blog/page:num/"
