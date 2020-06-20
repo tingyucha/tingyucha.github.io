@@ -3,6 +3,9 @@ layout: default
 title: CV
 featured_image: /images/picture/aspen_yellow.png
 ---
+<head>
+<script src="https://kit.fontawesome.com/8e44de192d.js" crossorigin="anonymous"></script>
+</head>
 
 <section class="hero hero--single">
 
@@ -23,10 +26,71 @@ featured_image: /images/picture/aspen_yellow.png
 	<div class="wrap">
 
 		<article class="single-post">
-				{% markdown cv.md %}
-				{% markdown demo-post.md %}
+
+			<ul class="button button--large" style="text-align:left;line-height:1em;">
+			  <li><a class="button button--large" id="btn_submitted", onclick="showDiv2('btn_submitted','submitted','eye1','txt1')" ><h3 id="txt1" style="text-align:left;line-height:2em;box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0.15);"><i id="eye1" class="fas fa-folder-plus"></i> Education</h3></a></li>
+			</ul>
+			<div class="content" id="submitted" style="display:none;margin-top:-40px;">
+				<div class="table-wrapper">
+					<table>
+						<tbody>
+							<tr>
+								<td>2018 - now</td>
+								<td>Colorado State University</td>
+								<td>Ph.D.</td>
+
+
+							</tr>
+
+							<tr>
+								<td>2016 - 2018</td>
+								<td>Colorado State University</td>
+								<td>M.S.</td>
+
+							</tr>
+							<tr>
+								<td>2012 - 2016 </td>
+								<td>National Taiwan University</td>
+
+								<td>Bachelor</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				</div>
+
 		</article>
 
 	</div>
 
 </section>
+
+<script>
+function showDiv(btn,ctn,eye,txt) {
+	var ic = document.getElementById(eye)
+	var x = document.getElementById(ctn);
+	var property = document.getElementById(btn);
+	var str = document.getElementById(txt)
+	if (x.style.display === "none") {
+		x.style.display = "block";
+		property.style.backgroundColor = "#8a4680";
+		str.style.color = "white"
+		ic.style.color = "white"
+		ic.classList.replace('fa-eye-slash','fa-eye');
+	} else {
+		x.style.display = "none";
+		property.style.backgroundColor = "transparent";
+		str.style.color = "black"
+		ic.style.color="black"
+		ic.classList.replace('fa-eye','fa-eye-slash');
+	}
+
+
+}
+
+
+
+
+
+</script>
