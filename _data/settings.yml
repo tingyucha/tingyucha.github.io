@@ -10,15 +10,17 @@ menu_settings:
   menu_items:
     - title: 'Home'
       url: '/'
-    - title: 'Projects'
-      url: '/projects'
-    - title: 'Publications'
-      url: '/publications'
+    - title: 'Research'
+      url: '/research'
+    - title: 'Curriculum Vitae'
+      url: '/cv'
+    - title: 'Photos'
+      url: '/photos'
     - title: 'Contact'
       url: '/contact'
 
 footer_settings:
-  footer_tagline: Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+  footer_tagline: tingyu(at)rams.colostate.edu
 
 hero_settings:
   overlay_opacity: 0.2
@@ -34,7 +36,7 @@ contact_settings:
 
 social_settings:
   facebook_url: ''
-  twitter_url: ''
+  twitter_url: 'https://twitter.com/TingYuCha'
   instagram_url: ''
   snapchat_url: ''
   youtube_url: ''

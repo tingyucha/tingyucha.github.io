@@ -4,61 +4,83 @@ title: CV
 featured_image: /images/picture/aspen_yellow.png
 ---
 <head>
-<script src="https://kit.fontawesome.com/8e44de192d.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/8e44de192d.js" crossorigin="anonymous"></script>
 </head>
+ <section class="hero hero--single">
 
-<section class="hero hero--single">
+ 	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
+	 	<div class="hero__overlay"></div>
+	 </div>
 
-	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
-		<div class="hero__overlay"></div>
-	</div>
+	 <div class="wrap">
 
-	<div class="wrap">
-
-		<h1> About Me! </h1>
+	 	<h1> About Me! </h1>
 		<p> Ting-Yu's experience and CV </p>
 
-	</div>
+	 </div>
 
 </section>
-
 <section class="single">
-	<div class="wrap">
+<div class="wrap">
 
-		<article class="single-post">
+	<article class="single-post">
+		<h3 style="text-align:left;line-height:2em;"> Research Interests and Experience </h3>
+		<div class="body">
+		<p style="margin-top:10px;text-align:justify">My research interests are in understanding thermodynamic, dynamics, and microphysics interactions in TC intensity change and extreme precipitation and improving radar research tools. I have been collaborating with the National Center for Atmospheric Research (NCAR) to develop the LROSE radar tools and am involved in the Airborne Phased Array Radar (APAR) project. I will participate in the PRECIP 2021 field campaign in Taiwan, and use the observational dataset to understand the key mechanism related to heavy precipitation. </p>
+		</div>
 
-			<ul class="button button--large" style="text-align:left;line-height:1em;">
-			  <li><a class="button button--large" id="btn_submitted", onclick="showDiv2('btn_submitted','submitted','eye1','txt1')" ><h3 id="txt1" style="text-align:left;line-height:2em;box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0.15);"><i id="eye1" class="fas fa-folder-plus"></i> Education</h3></a></li>
-			</ul>
-			<div class="content" id="submitted" style="display:none;margin-top:-40px;">
-				<div class="table-wrapper">
-					<table>
-						<tbody>
-							<tr>
-								<td>2018 - now</td>
-								<td>Colorado State University</td>
-								<td>Ph.D.</td>
+		<!--a class="button button--light" style="border-color:transparent;line-height:1em;" id="btn_submitted", onclick="showDiv2('btn_submitted','submitted','eye1','txt1')"><h3 id="txt1" style="text-align:left;line-height:2em;box-shadow: inset 0 0 0 0px; margin-left:-23px;"><i id="eye1" class=" "></i>Education</h3></a-->
+		<h3 style="text-align:left;line-height:2em;"> Education</h3>
+		<div class="body" id="submitted" style="margin-top:-20px;">
+				<table>
+					<tbody>
+						<tr>
+							<td>2018 - now</td>
+							<td> Colorado State University </td>
+							<td>Ph.D.</td>
+						</tr>
 
-
-							</tr>
-
-							<tr>
-								<td>2016 - 2018</td>
-								<td>Colorado State University</td>
-								<td>M.S.</td>
-
+						<tr>
+							<td>2016 - 2018</td>
+							<td>Colorado State University</td>
+							<td>M.S.</td>
 							</tr>
 							<tr>
 								<td>2012 - 2016 </td>
 								<td>National Taiwan University</td>
-
 								<td>Bachelor</td>
 							</tr>
-
 						</tbody>
 					</table>
+
 				</div>
-				</div>
+
+		<h3 style="text-align:left;line-height:2em;"> Awards </h3>
+		<div class="body">
+
+		<p style="margin-top:10px;"><b> June 2020 </b> Awarded 2020 Taiwan Ministry of Education graduate fellowship</p>
+		<p><b> October 2017 </b> Awarded Student Poster Award at 2017 ICMCS-XII conference</p>
+		</div>
+
+		<h3 style="text-align:left;line-height:2em;"> Skills </h3>
+		<div class="body">
+		<p style="margin-top:10px;text-align:justify">Julia, Python, Matlab, HTML, Jekyll, GitHub, LaTex, C++, Shell script, Fortran</p>
+		</div>
+
+		<h3 style="text-align:left;line-height:2em;"> Applications </h3>
+		<div class="body">
+		<p style="margin-top:10px;text-align:justify">Data analysis, data visualization, statistical analysis</p>
+		</div>
+
+
+		<h3 style="text-align:left;line-height:2em;"> Conferences and presentations </h3>
+		<div class="body">
+
+		<p style="margin-top:10px;"><i> 39th AMS Radar Conference, Nara, Japan, 2019: </i> Polygonal Eyewall Asymmetries during the rapid intensification of Hurricane Michael (2018)</p>
+		<p><i> 33rd AMS Conference on Hurricanes and Tropical Meteorology, Ponte Vedra, Florida, 2018: </i> Eyewall Replacement Cycle of Hurricane Matthew (2016) Observed by Doppler Radar. </p>
+		</div>
+
+		
 
 		</article>
 
@@ -67,30 +89,25 @@ featured_image: /images/picture/aspen_yellow.png
 </section>
 
 <script>
-function showDiv(btn,ctn,eye,txt) {
-	var ic = document.getElementById(eye)
-	var x = document.getElementById(ctn);
-	var property = document.getElementById(btn);
-	var str = document.getElementById(txt)
-	if (x.style.display === "none") {
-		x.style.display = "block";
-		property.style.backgroundColor = "#8a4680";
-		str.style.color = "white"
-		ic.style.color = "white"
-		ic.classList.replace('fa-eye-slash','fa-eye');
-	} else {
-		x.style.display = "none";
-		property.style.backgroundColor = "transparent";
-		str.style.color = "black"
-		ic.style.color="black"
-		ic.classList.replace('fa-eye','fa-eye-slash');
-	}
+function showDiv2(btn,ctn,eye,txt) {
+  var ic = document.getElementById(eye)
+  var x = document.getElementById(ctn);
+  var property = document.getElementById(btn);
+  var str = document.getElementById(txt)
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    property.style.backgroundColor = "transparent";
+    str.style.color = "black"
+    ic.style.color = "black"
+    ic.classList.replace('fas fa-folder-plus','fas fa-folder-open');
+  } else {
+    x.style.display = "none";
+    property.style.backgroundColor = "transparent";
+    str.style.color = "black"
+    ic.style.color="black"
+    ic.classList.replace('fas fa-folder-open','fas fa-folder-plus');
+  }
 
 
 }
-
-
-
-
-
 </script>
