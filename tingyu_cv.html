@@ -6,6 +6,15 @@ featured_image: /images/picture/aspen_yellow.png
 <head>
 	<script src="https://kit.fontawesome.com/8e44de192d.js" crossorigin="anonymous"></script>
 </head>
+
+<style>
+	.center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+}
+</style>
  <section class="hero hero--single">
 
  	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
@@ -26,9 +35,19 @@ featured_image: /images/picture/aspen_yellow.png
 	<article class="single-post">
 		<h3 style="text-align:left;line-height:2em;"> Research Interests and Experience </h3>
 		<div class="body">
-		<p style="margin-top:10px;text-align:justify">My research interests are in understanding thermodynamic, dynamics, and microphysics interactions in TC intensity change and extreme precipitation and improving radar research tools. I have been collaborating with the National Center for Atmospheric Research (NCAR) to develop the LROSE radar tools and am involved in the Airborne Phased Array Radar (APAR) project. I will participate in the PRECIP 2021 field campaign in Taiwan, and use the observational dataset to understand the key mechanism related to heavy precipitation. </p>
-		</div>
+		<p style="margin-top:10px;text-align:justify">My research interests are in understanding thermodynamic, dynamics, and microphysics interactions in TC intensity change and extreme precipitation and improving radar research tools. I have been collaborating with the National Center for Atmospheric Research (NCAR) to develop the <a href="http://lrose.net/" target="_blank">LROSE</a> radar tools and am involved in the Airborne Phased Array Radar (APAR) project. </p>
 
+		<p style="text-align:justify"> I had involved in the Plains Elevated Convection at Night (PECAN) field campaign in 2015, Propagation of Intra-Seasonal Tropical OscillatioNs (PISTON) field campaign in 2018, and will participate the Prediction of Rainfall Extremes Campaign In the Pacific (PRECIP) field campaign over Taiwan region in the upcoming 2021 summer. I will use the PRECIP observational dataset to understand the key mechanism related to heavy precipitation.</p>
+
+		<br>
+		<div class="image">
+			<a href="#"><img src="/images/picture/pecan.jpg" class="center" alt="Figure" style="width: 60%" /></a>
+		</div>
+		<p> Image was taken in the PECAN field campaign in 2015. From left to right, Ting-Yu Cha, Jim Wilson, and Shiou-Rong Chu.
+		</div>
+		<br>
+		<br>
+		<a class="button button--light center" style="line-height:1em;" href="./document/CV_Ting-Yu.pdf" target="_blank"><h4 style="text-align:center;line-height:2em;box-shadow: inset 0 0 0 0px; ">👉 Download my CV here </h4></a>
 		<!--a class="button button--light" style="border-color:transparent;line-height:1em;" id="btn_submitted", onclick="showDiv2('btn_submitted','submitted','eye1','txt1')"><h3 id="txt1" style="text-align:left;line-height:2em;box-shadow: inset 0 0 0 0px; margin-left:-23px;"><i id="eye1" class=" "></i>Education</h3></a-->
 		<h3 style="text-align:left;line-height:2em;"> Education</h3>
 		<div class="body" id="submitted" style="margin-top:-20px;">
@@ -55,6 +74,14 @@ featured_image: /images/picture/aspen_yellow.png
 
 				</div>
 
+			<h3 style="text-align:left;line-height:2em;"> Publications </h3>
+			<div class="body">
+
+			<p style="margin-top:10px;"><b> Cha, T-Y.</b>, M. M. Bell, W.-C. Lee, A. J. DesRosiers, 2020: Polygonal Eyewall Asymmetries during the rapid intensification of Hurricane Michael (2018).<i> Geophysical Research Letters</i>, 47, e2020GL087919, <a href="https://doi.org/10.1029/2020GL087919" target="_blank"> https://doi.org/10.1029/2020GL087919</a>.</p>
+			<p><b> Cha, T-Y.</b>, M. M. Bell, 2020: Comparison of Single Doppler and Multiple Doppler Wind Retrievals in Hurricane Matthew (2016), <a href=" " target="_blank"> In preprint</a>.</p>
+
+			</div>
+
 		<h3 style="text-align:left;line-height:2em;"> Awards </h3>
 		<div class="body">
 
@@ -64,7 +91,7 @@ featured_image: /images/picture/aspen_yellow.png
 
 		<h3 style="text-align:left;line-height:2em;"> Skills </h3>
 		<div class="body">
-		<p style="margin-top:10px;text-align:justify">Julia, Python, Matlab, HTML, Jekyll, GitHub, LaTex, C++, Shell script, Fortran</p>
+		<p style="margin-top:10px;text-align:justify">Julia, Python, Matlab, HTML, Jekyll, Weather Research and Forecast (WRF) model, GitHub, LaTex, C++, Shell script, Fortran</p>
 		</div>
 
 		<h3 style="text-align:left;line-height:2em;"> Applications </h3>
@@ -76,11 +103,23 @@ featured_image: /images/picture/aspen_yellow.png
 		<h3 style="text-align:left;line-height:2em;"> Conferences and presentations </h3>
 		<div class="body">
 
-		<p style="margin-top:10px;"><i> 39th AMS Radar Conference, Nara, Japan, 2019: </i> Polygonal Eyewall Asymmetries during the rapid intensification of Hurricane Michael (2018)</p>
-		<p><i> 33rd AMS Conference on Hurricanes and Tropical Meteorology, Ponte Vedra, Florida, 2018: </i> Eyewall Replacement Cycle of Hurricane Matthew (2016) Observed by Doppler Radar. </p>
+		<h4 style="margin-top:10px;">Oral presentation</h4>
+		{% for entry in site.data.presentation %}
+		  {% if entry.type == 'oral'%}
+			<p><li style="font-size: 20px;line-height:1.8em;text-align:justify"><b>Cha, T.-Y.</b>, {{ entry.authors}}, {{entry.year}}: {{ entry.title}}. <i>{{ entry.conference}}</i>, {{ entry.location}}. {% if entry.web != false %}<a href="{{ entry.web }}" target="_blank">{{ entry.web}}</a></li></p>{% endif %}
+			{% endif %}
+		{% endfor %}
+		<h4 style="margin-top:10px;">Poster presentation</h4>
+		{% for entry in site.data.presentation %}
+			{% if entry.type == 'poster'%}
+			<p><li style="font-size: 20px;line-height:1.8em;text-align:justify"><b>Cha, T.-Y.</b>, {{ entry.authors}}, {{entry.year}}: {{ entry.title}}. <i>{{ entry.conference}}</i>, {{ entry.location}}. {% if entry.web != false %}<a href="{{ entry.web }}" target="_blank">{{ entry.web}}</a></li></p>{% endif %}
+			{% endif %}
+		{% endfor %}
+
+
 		</div>
 
-		
+
 
 		</article>
 

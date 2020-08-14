@@ -13,7 +13,7 @@ menu_settings:
     - title: 'Research'
       url: '/research'
     - title: 'Curriculum Vitae'
-      url: '/cv'
+      url: '/tingyu_cv.html'
     - title: 'Photos'
       url: '/photos'
     - title: 'Contact'
