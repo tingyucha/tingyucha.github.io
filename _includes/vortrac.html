@@ -1,0 +1,43 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var myChart = Highcharts.chart('maxvt', {
+    chart: {
+      type: 'line'
+    },
+    title: {
+      useHTML: true,
+      text: "Laura"
+    },
+    yAxis: {
+      title: {
+        useHTML: true,
+        text: "Maximum Tangential Wind (</sup>m s<sup>-1</sup>)"
+      },
+    },
+    xAxis: {
+      title: {
+        text: "Date",
+      },
+      type: 'datetime',
+      labels: {
+          rotation: 45,
+          align: 'left'
+    },
+    dateTimeLabelFormats: { // don't display the dummy year\
+								year:  '%I:%M:%S %p',
+								month:  '%I:%M:%S %p',
+                day: '%I:%M:%S %p'
+            },
+					},
+    series: [{
+      name: 'MaxVT',
+      data:[ {% for item in site.data.vortrac.Laura2020 %}
+      {% if item.MaxVT %} [Date.UTC({{item.Year}}, {{item.Month}}, {{item.Date}},{{item.Hour}},{{item.Minute}},{{item.Second}}),{{item.MaxVT}}],{% endif %} {% endfor %}
+
+      ]
+
+
+    }]
+    });
+  });
+</script>
