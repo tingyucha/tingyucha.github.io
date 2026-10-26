@@ -372,9 +372,13 @@
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Listing post click
 
 	// Click anywhere on the post to go to the link
-	$(document).on('click', '.post', function (){
+	$(document).on('click', '.post', function (e){
+
+		if ($(e.target).closest('a, button').length) return;
 
 		var targetPost = $(this).find('.post__title a').attr('href');
+
+		if (!targetPost) return;
 
 		if ( $('body').hasClass('ajax-loading') ) {
 

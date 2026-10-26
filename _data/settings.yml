@@ -11,7 +11,7 @@ menu_settings:
     - title: 'Home'
       url: '/'
     - title: 'Research'
-      url: '/research'
+      url: '/research/'
     - title: 'Curriculum Vitae'
       url: '/tingyu_cv.html'
     - title: 'Photos'
@@ -20,7 +20,7 @@ menu_settings:
       url: '/contact'
 
 footer_settings:
-  footer_tagline: tingyu(at)rams.colostate.edu
+  footer_tagline: tycha@ucar.edu
 
 hero_settings:
   overlay_opacity: 0.2
@@ -60,7 +60,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
-  linkedin_url: ''
+  linkedin_url: 'https://www.linkedin.com/in/ting-yu-cha-b7a78a163/'
 
 color_settings:
   background_color: '#ffffff'

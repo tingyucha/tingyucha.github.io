@@ -25,7 +25,21 @@ div.wrap_header{
 	        }
 }
 
+.news-more {
+	display: flex;
+	flex-direction: column;
+	margin-top: 8px;
+}
 
+.news-more__rest {
+	order: 1;
+}
+
+.news-more__toggle {
+	order: 2;
+	align-self: flex-start;
+	margin-top: 16px;
+}
 </style>
 
 <section class="hero">
@@ -65,7 +79,7 @@ div.wrap_header{
 					<h2 class="post__title"><a href="tingyu_cv.html">{{ 'About Me' }}</a></h2>
 					<!--h2 class="post__title"><a href="{{ project.url | relative_url }}">{{ 'About Me' }}</a></h2-->
 					<p class="post__subtitle">{{ 'Research Interests' }}</p>
-					<p class="post__description" style="text-align:justify">{{ 'I am a Ph.D. candidate at <a href="https://www.colostate.edu/">Colorado State University</a> working with <a href="https://www.atmos.colostate.edu/people/faculty/bell/"> Dr. Michael M. Bell </a>, researching the mesoscale structure, evolution, and precipitation of tropical cyclones with ground-based and airborne radar data and numerical simulations. In my spare time, I enjoy hiking, snowboarding, cooking and traveling. You can find more info about me here.' }}</p>
+					<p class="post__description" style="text-align:left">I am a Scientist at the <a href="https://ncar.ucar.edu/">NSF National Center for Atmospheric Research (NCAR)</a>, where I bridge the gap between observational data and numerical weather prediction. I leverage polarimetric radar, large satellite datasets, and modeling frameworks to investigate tropical convection, hurricane dynamics, and rainfall intensity. After earning my Ph.D. in <a href="https://www.atmos.colostate.edu/">Atmospheric Science</a> at <a href="https://www.colostate.edu/">Colorado State University</a>, I joined NCAR as an <a href="https://edec.ucar.edu/advanced-study-program">Advanced Study Program (ASP)</a> Postdoctoral Fellow before transitioning to my current role. I am also dedicated to community tools, contributing to the <a href="http://lrose.net/">LROSE</a> project and serving as an Associate Editor for the <a href="https://www.ametsoc.org/ams/publications/journals/journal-of-atmospheric-and-oceanic-technology/">Journal of Atmospheric and Oceanic Technology</a>. Outside of work, you can usually find me hiking, snowboarding, dirt biking, or traveling.</p>
 				</div>
 			</div>
 		</article>
@@ -77,23 +91,41 @@ div.wrap_header{
 			<div class="content">
 				<div class="content" style="background-color:white">
 					<h2 class="post__title">Recent News</h2>
-					<p><b>November 2022:</b> Obtained the Ph.D. degree in Atmospheric Science at Colorado State University.<p></p>
-					<p><b>May to August 2022:</b> Participated <a href="http://precip.org/" target="_blank">the PRECIP field campaign. </a><p></p>
-					<p><b>May 2022:</b> Awarded <a href="https://www.atmos.colostate.edu/2022/05/kevin-yang-and-ting-yu-cha-receive-department-honors-for-student-research/" target="_blank">the CSU Alumni Award. </a><p></p>
-					<p><b>April 2022:</b> Received <a href="https://www.atmos.colostate.edu/2022/04/ting-yu-cha-receives-ncar-advanced-study-program-postdoctoral-fellowship/" target="_blank">NCAR Advanced Study Program Postdoctoral Fellowship. </a><p></p>
-					<p><b>November 2021:</b> Received <a href="https://www.atmos.colostate.edu/2021/12/kathryn-moore-and-ting-yu-cha-awarded-dietrich-and-shrake-culler-scholarships/" target="_blank">the Shrake-Culler Scholarship. </a><p>
-					<p><b>October 2021:</b> "Vertical Vortex Development in Hurricane Michael (2018) during Rapid Intensification" has been published in <a href="https://doi.org/10.1175/MWR-D-21-0098.1" target="_blank">Monthly Weather Review. </a><p>
-					<p><b>August 2021:</b> Received <a href="https://www.atmos.colostate.edu/2021/08/ting-yu-cha-receives-third-place-in-wagner-memorial-award-competition/" target="_blank">third place in Wagner Memorial Award competition. </a><p>
-					<p><b>August 2021:</b> "Doppler Radar Analysis of the Eyewall Replacement Cycle of Hurricane Matthew (2016) in Vertical Wind Shear" has been published in <a href="https://doi.org/10.1175/MWR-D-20-0289.1" target="_blank">Monthly Weather Review. </a><p>
-					<p><b>May 2021:</b> "Comparison of Single Doppler and Multiple Doppler Wind Retrievals in Hurricane Matthew (2016)" has been published in <a href="https://doi.org/10.5194/amt-14-3523-2021" target="_blank">Atmospheric Measurement Techniques. </a><p>
-					<p><b>September 2020:</b> "Polygonal eyewall asymmetries during the rapid intensification of Hurricane Michael (2018)" was chosen as an <a href="https://eos.org/editor-highlights/the-evolution-of-observed-hurricane-eyewall-shapes" target="_blank">Editors’ Highlight</a>. Fewer than 2 percent of journal articles are featured this way.<p>
-					<p><b>August 2020:</b> "Polygonal eyewall asymmetries during the rapid intensification of Hurricane Michael (2018)" has been published in <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020GL087919" target="_blank">Geophysical Research Letters. </a><p>
-					<p><b>June 2020:</b> Awarded <a href="https://www.atmos.colostate.edu/2020/06/ting-yu-cha-awarded-taiwan-ministry-of-education-graduate-fellowship/" target="_blank">2020 Taiwan Ministry of Education graduate fellowship. </a><p>
-					<p><b>September 2019:</b> Presented work on "Polygonal eyewall asymmetries during the rapid intensification of Hurricane Michael (2018)" at the AMS 39th International Conference on Radar Meteorology in Nara, Japan. <p>
-				  <p><b>September 2019:</b> Passed my prelim!😊<p>
-					<p><b>August 2018:</b> Continued Ph.D. at CSU with Dr. Michael M. Bell.<p>
-					<p><b>July 2018:</b> Obtained M.S. degree in Atmospheric Science at Colorado State University.<p>
-					<p><b>August 2016:</b> Started M.S. at Colorado State University with Dr. Michael M. Bell. <p>
+					<p><b>April 2026:</b> Promoted to Scientist IV.</p>
+					<p><b>April 2026:</b> Served on the program committee for the <a href="https://icmcs17.web.app/" target="_blank">17th International Conference on Mesoscale Convective Systems (ICMCS-XVII)</a>.</p>
+					<p><b>March 2026:</b> Gave an invited talk, “Advancing Tropical Maritime Convection Prediction: An Integrated Modeling and Observation Approach,” at the American Physical Society Global Physics Summit in Denver, Colorado.</p>
+					<p><b>August 2025:</b> Served as session chair and on the severe weather and mesoscale meteorology program committee at the <a href="https://ams.confex.com/ams/41Radar/meetingapp.cgi/Session/73441" target="_blank">41st AMS Conference on Radar Meteorology</a>, and taught the <a href="https://openradarscience.org/ams2025/" target="_blank">AMS Open Radar Science Short Course</a>.</p>
+					<p><b>May 2025:</b> Joined <a href="https://ncar.ucar.edu/">NSF NCAR</a> as a Scientist (Scientist III, formerly Project Scientist I).</p>
+					<div class="news-more">
+						<div class="news-more__rest" hidden>
+							<p><b>April 2025:</b> Served on the organizing committee for the <a href="https://tw-us-ai-workshop.web.app/committee" target="_blank">Taiwan–US Workshop on AI/ML for Satellite Data, Severe Weather, and Tropical Cyclones</a>.</p>
+							<p><b>2025:</b> Coauthored “Microphysical and Kinematical Characteristics of Merged and Isolated Convective Cells over the Complex Terrain of the Taipei Basin,” published in <a href="https://doi.org/10.1029/2024JD042375" target="_blank">Journal of Geophysical Research: Atmospheres</a>.</p>
+							<p><b>August 2024:</b> “Tropical Cyclone Asymmetric Eyewall Evolution and Intensification in a Two-Layer Model” has been published in <a href="https://doi.org/10.5194/wcd-5-1013-2024" target="_blank">Weather and Climate Dynamics</a>.</p>
+							<p><b>2024:</b> Received the <a href="https://www.erad2024.it/awards/" target="_blank">ERAD participation award</a>.</p>
+							<p><b>2024:</b> Began serving as an Associate Editor for the <a href="https://www.ametsoc.org/ams/publications/journals/journal-of-atmospheric-and-oceanic-technology/" target="_blank">Journal of Atmospheric and Oceanic Technology</a>. Also served as an Associate Editor for Monthly Weather Review from 2024 to 2025.</p>
+							<p><b>November 2023:</b> “Three-Dimensional Variational Multi-Doppler Wind Retrieval over Complex Terrain” has been published in the <a href="https://doi.org/10.1175/JTECH-D-23-0019.1" target="_blank">Journal of Atmospheric and Oceanic Technology</a>.</p>
+							<p><b>2023:</b> Began an <a href="https://edec.ucar.edu/advanced-study-program" target="_blank">Advanced Study Program Postdoctoral Fellowship</a> at NSF NCAR.</p>
+							<p><b>May 2023:</b> Co-chaired the <a href="https://icmcs15.colostate.edu/committee/" target="_blank">15th International Conference on Mesoscale Convective Systems</a>.</p>
+							<p><b>November 2022:</b> Obtained the Ph.D. degree in Atmospheric Science at Colorado State University.</p>
+							<p><b>May to August 2022:</b> Participated in <a href="http://precip.org/" target="_blank">the PRECIP field campaign</a>.</p>
+							<p><b>May 2022:</b> Awarded <a href="https://www.atmos.colostate.edu/2022/05/kevin-yang-and-ting-yu-cha-receive-department-honors-for-student-research/" target="_blank">the CSU Alumni Award</a>.</p>
+							<p><b>April 2022:</b> Received the <a href="https://www.atmos.colostate.edu/2022/04/ting-yu-cha-receives-ncar-advanced-study-program-postdoctoral-fellowship/" target="_blank">NCAR Advanced Study Program Postdoctoral Fellowship</a>.</p>
+							<p><b>November 2021:</b> Received <a href="https://www.atmos.colostate.edu/2021/12/kathryn-moore-and-ting-yu-cha-awarded-dietrich-and-shrake-culler-scholarships/" target="_blank">the Shrake-Culler Scholarship</a>.</p>
+							<p><b>October 2021:</b> “Vertical Vortex Development in Hurricane Michael (2018) during Rapid Intensification” has been published in <a href="https://doi.org/10.1175/MWR-D-21-0098.1" target="_blank">Monthly Weather Review</a>.</p>
+							<p><b>August 2021:</b> Received <a href="https://www.atmos.colostate.edu/2021/08/ting-yu-cha-receives-third-place-in-wagner-memorial-award-competition/" target="_blank">third place in the Wagner Memorial Award competition</a>.</p>
+							<p><b>August 2021:</b> “Doppler Radar Analysis of the Eyewall Replacement Cycle of Hurricane Matthew (2016) in Vertical Wind Shear” has been published in <a href="https://doi.org/10.1175/MWR-D-20-0289.1" target="_blank">Monthly Weather Review</a>.</p>
+							<p><b>May 2021:</b> “Comparison of Single Doppler and Multiple Doppler Wind Retrievals in Hurricane Matthew (2016)” has been published in <a href="https://doi.org/10.5194/amt-14-3523-2021" target="_blank">Atmospheric Measurement Techniques</a>.</p>
+							<p><b>September 2020:</b> “Polygonal eyewall asymmetries during the rapid intensification of Hurricane Michael (2018)” was chosen as an <a href="https://eos.org/editor-highlights/the-evolution-of-observed-hurricane-eyewall-shapes" target="_blank">Editors’ Highlight</a>. Fewer than 2 percent of journal articles are featured this way.</p>
+							<p><b>August 2020:</b> “Polygonal eyewall asymmetries during the rapid intensification of Hurricane Michael (2018)” has been published in <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020GL087919" target="_blank">Geophysical Research Letters</a>.</p>
+							<p><b>June 2020:</b> Awarded the <a href="https://www.atmos.colostate.edu/2020/06/ting-yu-cha-awarded-taiwan-ministry-of-education-graduate-fellowship/" target="_blank">2020 Taiwan Ministry of Education graduate fellowship</a>.</p>
+							<p><b>September 2019:</b> Presented work on “Polygonal eyewall asymmetries during the rapid intensification of Hurricane Michael (2018)” at the AMS 39th International Conference on Radar Meteorology in Nara, Japan.</p>
+							<p><b>September 2019:</b> Passed my prelim!😊</p>
+							<p><b>August 2018:</b> Continued Ph.D. at CSU with Dr. Michael M. Bell.</p>
+							<p><b>July 2018:</b> Obtained M.S. degree in Atmospheric Science at Colorado State University.</p>
+							<p><b>August 2016:</b> Started M.S. at Colorado State University with Dr. Michael M. Bell.</p>
+						</div>
+						<button type="button" class="button button--light news-more__toggle" aria-expanded="false" onclick="var rest=this.previousElementSibling; var show=rest.hidden; rest.hidden=!show; this.setAttribute('aria-expanded', String(show)); this.textContent=show?'Show less':'Read more';">Read more</button>
+					</div>
 				</div>
 			</div>
 

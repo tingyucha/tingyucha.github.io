@@ -1,0 +1,166 @@
+---
+layout: page
+title: Research
+subtitle: Tropical cyclones, convection, rainfall, and open radar tools
+featured_image: /images/hurricanemichael.jpeg
+permalink: /research/
+---
+
+<style>
+.research-card {
+	margin: 0 0 36px;
+	padding-bottom: 32px;
+	border-bottom: 1px solid #e6e8eb;
+}
+.research-card:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+.research-card h2 {
+	margin: 0 0 18px;
+	font-size: 22px;
+	line-height: 1.35;
+	letter-spacing: 0;
+}
+.research-card__row {
+	display: flex;
+	gap: 28px;
+	align-items: flex-start;
+}
+.research-card__figure {
+	flex: 0 0 32%;
+	max-width: 32%;
+}
+.research-card__placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 190px;
+	background: #f4f5f6;
+	border: 1px dashed #c5ced6;
+	color: #6C7A89;
+	font-size: 14px;
+	text-align: center;
+	padding: 16px;
+}
+.research-card__body {
+	flex: 1;
+	min-width: 0;
+}
+.research-card__body p {
+	margin-top: 0;
+}
+.research-card__links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 16px;
+}
+.research-card__links a.button {
+	margin: 0;
+	border-bottom: 0;
+}
+@media (max-width: 700px) {
+	.research-card__row {
+		flex-direction: column;
+	}
+	.research-card__figure {
+		flex-basis: auto;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+</style>
+
+<article class="research-card" id="tc-dynamics">
+	<h2>How do eyewall asymmetries change as a tropical cyclone intensifies?</h2>
+	<div class="research-card__row">
+		<div class="research-card__figure">
+			<div class="research-card__placeholder">Figure</div>
+		</div>
+		<div class="research-card__body">
+			<p>Single-Doppler radar every five minutes captured the winds of Hurricane Michael (2018) as its polygonal eyewall intensified to Category 5. The asymmetries move at speeds consistent with vortex Rossby wave theory, and a two-layer model connects those waves to the boundary layer updrafts and to intensification. </p>
+			<div class="research-card__links">
+				<a class="button button--light" href="https://doi.org/10.1029/2020GL087919" target="_blank">GRL 2020</a>
+				<a class="button button--light" href="https://doi.org/10.5194/wcd-5-1013-2024" target="_blank">WCD 2024</a>
+				<a class="button button--light" href="https://doi.org/10.1175/MWR-D-20-0289.1" target="_blank">MWR 2021</a>
+			</div>
+		</div>
+	</div>
+</article>
+
+<article class="research-card" id="tropical-convection">
+	<h2>Can models reproduce the radar structure of tropical maritime convection?</h2>
+	<div class="research-card__row">
+		<div class="research-card__figure">
+			<div class="research-card__placeholder">Figure</div>
+		</div>
+		<div class="research-card__body">
+			<p>For a squall line observed by the CSU Sea-Pol radar during PRECIP in 2022, we compare a WRF simulation resampled by a radar simulator with the radar observations, applying consistent quality control to both. The default Morrison scheme makes the raindrops too big, and we use an observation-informed approach to correct that bias in the microphysics.</p>
+			<div class="research-card__links">
+				<a class="button button--light" href="http://precip.org/" target="_blank">PRECIP</a>
+			</div>
+		</div>
+	</div>
+</article>
+
+<article class="research-card" id="tc-rainfall">
+	<h2>Does vertical wind shear change how hard a tropical cyclone rains?</h2>
+	<div class="research-card__row">
+		<div class="research-card__figure">
+			<div class="research-card__placeholder">Figure</div>
+		</div>
+		<div class="research-card__body">
+			<p>Using TC-PRIMED observations from every basin (38 years of passive-microwave rainfall, plus TRMM and GPM precipitation radar since 1998), I separate typical rainfall from its variability. Median rain barely changes with shear. The heaviest rain rates, the tallest echo tops, and the strongest low-level reflectivity cores all increase with shear, and the effect is largest for major tropical cyclones. Echo-top height shows the vertical part a surface rainfall map cannot: under strong shear, convection near the core is deeper, and that difference fades by about 150–200 km from the center.</p>
+		</div>
+	</div>
+</article>
+
+<article class="research-card" id="radar-tools">
+	<h2>How do we turn a radar beam into the wind of a tropical cyclone?</h2>
+	<div class="research-card__row">
+		<div class="research-card__figure">
+			<div class="research-card__placeholder">Figure</div>
+		</div>
+		<div class="research-card__body">
+			<p>A radar measures motion only along its beam. With a single Doppler radar, I improved the Generalized Velocity Track Display technique and compared it with airborne dual-Doppler winds in Hurricane Matthew (2016). With several radars, I extended the variational method SAMURAI so the retrieval follows the terrain. Both are part of LROSE.</p>
+			<div class="research-card__links">
+				<a class="button button--light" href="https://doi.org/10.5194/amt-14-3523-2021" target="_blank">AMT 2021</a>
+				<a class="button button--light" href="https://doi.org/10.1175/JTECH-D-23-0019.1" target="_blank">JTECH 2023</a>
+				<a class="button button--light" href="http://lrose.net/" target="_blank">LROSE</a>
+			</div>
+		</div>
+	</div>
+</article>
+
+<article class="research-card" id="open-radar">
+	<h2>How do we make radar analysis something any researcher can repeat?</h2>
+	<div class="research-card__row">
+		<div class="research-card__figure">
+			<div class="research-card__placeholder">Figure</div>
+		</div>
+		<div class="research-card__body">
+			<p>The open radar community shares the software, sample data, and short courses that take a raw radar file to a result someone else can rerun. I teach in that community, including the AMS Open Radar courses and the courses at the European radar conference. The current course is ERAD 2026.</p>
+			<div class="research-card__links">
+				<a class="button button--light" href="https://openradarscience.org/" target="_blank">Open Radar Science</a>
+				<a class="button button--light" href="https://openradarscience.org/erad2026/" target="_blank">ERAD 2026</a>
+			</div>
+		</div>
+	</div>
+</article>
+
+<article class="research-card" id="zarr">
+	<h2>How can a field-campaign radar archive be explored without downloading it first?</h2>
+	<div class="research-card__row">
+		<div class="research-card__figure">
+			<div class="research-card__placeholder">Figure</div>
+		</div>
+		<div class="research-card__body">
+			<p>With colleagues on the NSF NCAR Geoscience Data Exchange, I contributed to a pilot that converted the PRECIP 2022 S-Pol radar data from NetCDF to Zarr. The store lives on NSF NCAR object storage, so the sweeps can be streamed from anywhere or analyzed beside the data on Casper and Derecho. The same path was tried with Research Aviation Facility flight data, a step toward archives that people and AI tools can open directly.</p>
+			<div class="research-card__links">
+				<a class="button button--light" href="https://gdex.ucar.edu/datasets/d694517/" target="_blank">GDEX dataset</a>
+			</div>
+		</div>
+	</div>
+</article>

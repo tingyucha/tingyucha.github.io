@@ -8,3 +8,9 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'kramdown-parser-gfm'
 end
+
+gem "logger", "~> 1.7"
+gem "csv", "~> 3.3"
+gem "base64", "~> 0.3.0"
+gem "bigdecimal", "~> 4.1"
+gem "mutex_m", "~> 0.3.0"
